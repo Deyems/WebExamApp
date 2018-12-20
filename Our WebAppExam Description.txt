@@ -1,0 +1,13 @@
+A brief Description of the Project
+FRONT END
+Landing Page
+Registration Page
+Login Page
+A page showing Solutions and Summary of Scores
+A Javascript clock for Exam taker
+
+BACK END
+Registration (Send info to database)
+Login (Fetch and Check to sign in)
+A table for questions, options and Answers
+
