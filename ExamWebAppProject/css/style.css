@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    text-decoration: none;
+    padding:0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+/*GLOBAL VARIABLES*/
+:root{
+    --color: green;
+    --base:lightgrey;
+    --shadow: 0 5px 5px rgb(9,40,99);
+}
+
+button{
+    background-color: var(--color);
+    color:white;
+    padding: 0.8rem;
+    border: none;
+}
+
+/*STYLING HTML ELEMENTS*/
+body{
+    line-height: 1.8rem;
+    /*color: var(--base);*/
+}
+.wrapper{
+    display: grid;
+    grid-gap: 30px;
+}
+/*STYLING THE HEADER SECTION*/
+header{
+    background-color: var(--color);
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main{
+    justify-self: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+.main button{
+    background-color: white;
+    color:var(--color);
+    font-size: 1rem;
+}
+
+/*STYLING THE CONTENT SECTION --WHERE QUESTIONS ARE*/
+.conContainer{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-gap: 10px;
+}
+.numbers{
+    justify-self: right;
+}
+
+.content{
+    display: grid;
+    grid-gap: 10px;
+}
+.que{
+    display: grid;
+    grid-gap: 10px;
+}
+.controls{
+    justify-self: right;
+}
+/*STYLING ASIDE INSIDE THE CONTENT*/
+aside{
+    display: grid;
+    grid-gap: 10px;
+    padding: 1rem;
+}
+.percent, .score{
+    box-shadow: var(--shadow);
+    padding: 0 0.5rem;
+    text-align: center;
+}
+
+.summary{
+    display: grid;
+    grid-template-areas: 
+    'head'
+    'stat'
+    'stat';
+    background-color: aliceblue;
+    box-shadow: var(--shadow);
+}
+.head{
+    grid-area: head;
+}
+.stat{
+    grid-area: stat;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.section{
+    border-right: 1px solid;
+    padding: 0 0.5rem;
+}
+
+/*FOOTER STYLES*/
+footer{
+    background-color: var(--color);
+    text-align: center;
+    padding: 1rem;
+}
